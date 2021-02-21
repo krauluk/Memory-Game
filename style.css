@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* display: flex;
+    flex-wrap: wrap; */
+    margin: 5px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.board {
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    height: 800px;
+    margin: 15px auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 1rem;
+}
+
+.cards {
+    /* flex-basis: 33.333%;
+    flex-grow: 1; */
+    /* min-width: calc(25% - 10px);
+    min-height: calc(33.333% - 10px); */
+    margin: 3px;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    cursor: pointer;
+    filter: brightness(70%);
+    transition: all .3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.score {
+    display: grid;
+    justify-content: center;
+    width: 100vw;
+}
+
+p {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a:active {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ff3333;
+}
+
+div:hover {
+    border: 4px solid #ff3333;
+    filter: brightness(100%);
+    transform: scale(0.9);
+}
+
+/* @media (orientation: portrait) {
+    div {
+        flex-basis: 30%;
+        height: 33.333vh;
+    }
+} */
+
+@media screen and (max-width: 800px) {
+    header {
+        display: none;
+    }
+}
+
+.chandra {
+    background-image: url("img/chandra.jpg");
+}
+
+.gideon {
+    background-image: url("img/gideon.jpg");
+}
+
+.jayce {
+    background-image: url("img/jayce.jpg");
+}
+
+.liliana {
+    background-image: url("img/liliana.jpg");
+}
+
+.nicol {
+    background-image: url("img/nicol.jpg");
+    background-position: top;
+}
+
+.nissa {
+    background-image: url("img/nissa.jpg");
+}
+
+.off {
+    background-color: #eee;
+    opacity: 0;
+}
+
+.hidden {
+    background-image: url("img/cardback.png");
+}
